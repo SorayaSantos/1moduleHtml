@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Books Tinder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <style>
+
+        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+        .row.content {
+            height: 800px
+        }
+
+        /* Set gray background color and 100% height */
+        .sidenav {
+            padding-top: 80px;
+            background-color: hsl(211, 41%, 32%);
+            height: 100%;
+        }
+
+        /* Set black background color, white text and some padding */
+        footer {
+            background-color: #555;
+            padding: 15px;
+        }
+
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+
+            .row.content {
+                height: auto;
+            }
+        }
+    </style>
+
+</head>
+
+<body style="height:100vh">
+    <div class="container-fluid text-center h-100" >
+        <div class="row content h-100">
+            <div class="col-sm-2 sidenav">
+                <img src="http://culture.affinitymagazine.us/wp-content/uploads/2017/05/635873821517718970351055939_Stack-of-books-great-education.jpg" alt="" width="220px">
+                <br><br> <br><br> <br><br>   <br><br>     <br><br>      <br><br>               
+                <img src="https://www.sesptsa.org/wp-content/uploads/2015/01/fantasy-books.jpg" alt="" width="220px" >
+            </div>
+            <div class="col-sm-8 text-center font-italic text-primary">
+                <h1>Tinder Book</h1>
+                <hr>
+                <br>
+                <div id="book_image"></div>
+                <br>
+                <h1 id="book_title"></h1>
+                <br>
+                <p id="book_description"></p>
+                <br>
+                <div id="book_link"></div>
+                <br>
+                <div class="row content">
+                    <div class="col-sm-6">
+                        <button id="like" width="50px" height="50px"> Like</button></div>
+                    <div class="col-sm-6">
+                        <button id="dislike"> Dislike</button></div>
+                </div>
+            </div>
+            <div class="col-sm-2 sidenav">
+                <p class=font-italic>“A reader lives a thousand lives before he dies . . . The man who never reads lives only one.” – George R.R. Martin</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid text-center">
+        <br>
+    </footer>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+<script src="utils.js"></script>
+
+</body>
+
+</html>

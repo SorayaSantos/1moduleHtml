@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Page Title </title>
+</head>
+<body>
+    <p id="demo">bom dia</p>
+
+    <script>
+        //console.log("ola")
+        var hora = new Date().getHours();
+        // console.log(hora);
+
+        // if(hora > 20 ||hora < 6){
+        //     console.log("Hora > 20");
+        //     document.getElementById("demo").innerHTML = "Boa noite";
+        // }
+        // else if (hora > 13) {
+        //     document.getElementById("demo").innerHTML = "Boa tarde";
+        // }
+                
+        // else {
+        //     document.getElementById("demo").innerHTML = "Boa dia";
+        //     }
+        
+        // var dia = new Date().getDay();
+        // switch (dia) {
+        //     case 0:
+        //         document.getElementById("demo").innerHTML = "sunday";
+        //         break;
+        //     case 1:
+        //         document.getElementById("demo").innerHTML = "monday";
+        //         break;
+        //     case 2:
+        //         document.getElementById("demo").innerHTML = "tuesday";
+        //         break;
+        //     case 3:
+        //         document.getElementById("demo").innerHTML = "wednesday";
+        //         break;
+        //     case 4:
+        //         document.getElementById("demo").innerHTML = "thursday";
+        //         break;
+        //     case 5:
+        //         document.getElementById("demo").innerHTML = "friday";
+        //         break;
+        //     default:
+        //         document.getElementById("demo").innerHTML = "saturday";
+        //         break;
+        // }
+
+        // var text= "";
+        // for (let index = 0; index < 10; index++) {
+        //     // text = text + "" sao iguais
+        //     // text += sao iguais
+        //     if (index===5) {break;}
+        //     if (index===3) {continue;}
+        //     text += "Numero : " + index + "<br>";
+        // }
+        
+        // document.getElementById("demo").innerHTML = text;
+        // var txt = "";
+        // var person = ["john","dor", "35"];
+        // var x;
+
+        // for (x in person){
+        //     txt += person[x] + " ";
+        // }
+
+        // while (condition){
+
+        // }
+
+        // document.getElementById("demo").innerHTML = txt;
+        var index = 0;
+        var txt = "";
+        console.time('while');
+        while (index < 10) {
+            txt += "Numero : " + index + "<br>";
+            index++;
+        }
+
+        document.getElementById("demo").innerHTML = txt;
+
+        //console.log("init")
+        console.timeEnd('while');
+    </script>
+</body>
+</html>

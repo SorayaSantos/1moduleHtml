@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Books Tinder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen"> 
+
+    <style>
+
+        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+        .row.content {
+            height: 800px
+        }
+
+        /* Set gray background color and 100% height */
+        .sidenav {
+            padding-top: 80px;
+            background-color: hsl(211, 41%, 32%);
+            height: 100%;
+        }
+
+        /* Set black background color, white text and some padding */
+        footer {
+            background-color: rgb(212, 208, 208);
+            padding: 15px;
+        }
+
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+
+            .row.content {
+                height: auto;
+            }
+        }
+       
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#" id="home">Home</a></li>
+            </ul>
+            <ul class="nav navbar-nav">
+            <li><a href="#" id="result">Result</a></li>
+        </ul>
+        <div class="search-container">
+            <div>
+              <input type="text" placeholder="Search.." id="word">
+              <button type="submit" id="search"><i class="fa fa-search"> Click </i></button>
+            </div>
+        </div>
+      </nav>
+      <div class="container">
+      <div class="row">
+          <div class="col-sm-2">
+                <button type="button" class="table btn btn-default btn-sm" id="back">
+                        <span class="glyphicon glyphicon-menu-left"></span> Back
+                </button>
+          </div>          
+          <div class="col-sm-5">
+                <table class="table text-center">
+                        <thead class="thead-dark">
+                          <tr class="d-flex">
+                            <th class=" text-center col-sm-12" >Like</th>
+                          </tr>
+                        </thead>
+                      <tbody id="table1" class="table-primary">
+                      </tbody>
+                    </table>
+          </div>
+          <div class="col-sm-5">
+                <table class="table text-center">
+                        <thead class="thead-dark">
+                          <tr class="d-flex">
+                            <th scope="col" class="text-center col-sm-12">Dislike</th>
+                          </tr>
+                        </thead>
+                      <tbody id="table2" class="table-primary">
+                      </tbody>
+                </table>
+        </div>
+      </div>
+    </div>
+    <div id="conteudo" class="container-fluid text-center"style="height:200vh" >
+        <div class="row content" style="height:200vh">
+            <div class="col-sm-2 hidden-xs sidenav"style="height:200vh">
+                <img src="http://culture.affinitymagazine.us/wp-content/uploads/2017/05/635873821517718970351055939_Stack-of-books-great-education.jpg" alt="" width="90%">
+                <br><br> <br><br> <br><br>   <br><br>     <br><br>      <br><br>               
+                <img src="https://www.sesptsa.org/wp-content/uploads/2015/01/fantasy-books.jpg" alt="" width="90%" >
+            </div>
+            <div id="conteudo" class="col-sm-8 text-center font-italic text-primary"style="height:200vh">
+                <h1 > <strong>Tinder Books</strong></h1>
+                <hr>
+                <br>
+                <div id="book_image"></div>
+                <br>
+                <h2 id="book_title" class="text-dark"></h2>
+                <br>
+                <p id="book_description"class="text-dark"></p>
+                <br>
+                <div id="book_link"class="text-dark"></div>
+                <br>
+                <div class="row content">
+                    <div class="col-sm-6">
+                        <button id= "like" type="button" class="btn btn-success btn-lg">
+                            <span class="glyphicon glyphicon-thumbs-up"></span> Like
+                          </button>
+                    </div>
+                    <div class="col-sm-6">
+                        <button id= "dislike" type="button" class="btn btn-danger btn-lg">
+                            <span class="glyphicon glyphicon-thumbs-down"></span> Dislike
+                        </button>                    
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 hidden-xs sidenav"style="height:200vh">
+                <h3 class=font-italic><strong> “A reader lives a thousand lives before he dies . . . The man who never reads lives only one.” – George R.R. Martin</strong></h3>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="container-fluid text-center"style="height:10vh">
+        <br>
+    </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+<script src="utils.js"></script>
+<script src="main.js"></script>
+<script src="classe.js"></script>
+
+</body>
+
+</html>

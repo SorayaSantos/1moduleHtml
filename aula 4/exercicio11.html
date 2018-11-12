@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Page Title </title>
+</head>
+<body>
+    <p id="demo">bom dia</p>
+
+    <script>
+        //o programa deve executar um loop com 40 ciclos, que deve fazer print na consola buzz
+        //se o numero do ciclo em que esta for multiplo de 5, fizz se for multiplo de 3 e fizzbuzz
+        //se for multiplo de 3 e 5. se nao for multiplo de 3 nem de 5 faz print do proprio numero
+        // do ciclo
+        
+        var guardar = ""
+
+        for (let index = 0; index < 40; index++) {
+            if(index%5===0 && index%3===0) { 
+                guardar += "fizzbuzz" + "<br>";
+            }
+            else if(index%3===0) { 
+                guardar += " fizz "+ "<br>";
+            }
+            else if (index%5===0) { 
+                guardar += " buzz "+ "<br>";
+            }
+            else { 
+                guardar += index + "<br>";
+
+            }
+        document.getElementById("demo").innerHTML = guardar;    
+        }
+    </script>
+</body>
+</html>
